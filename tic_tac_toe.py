@@ -192,16 +192,16 @@ if sys.platform == "darwin":
     b9 = Button(root, width = 3, height = 2, command = lambda:BtnClick(b9), bg = "#0084FE", borderwidth = 0, state = DISABLED, font = ("Helvetica", 40, "normal"))
     replay = Button(root, text = "Play", fg = "#0084FE", highlightbackground = "#FFFFFF", bg = "#FFFFFF", width = 30, height = 2, font = ("Helvetica", 15, "normal"), command = Replay, borderwidth = 0)
 else:
-    b1 = Button(root, width = 3, height = 2, command = lambda:BtnClick(b1), bg = "#0084FE", borderwidth = 0, state = DISABLED, font = ("Helvetica", 30, "normal"))
-    b2 = Button(root, width = 3, height = 2, command = lambda:BtnClick(b2), bg = "#0084FE", borderwidth = 0, state = DISABLED, font = ("Helvetica", 30, "normal"))
-    b3 = Button(root, width = 3, height = 2, command = lambda:BtnClick(b3), bg = "#0084FE", borderwidth = 0, state = DISABLED, font = ("Helvetica", 30, "normal"))
-    b4 = Button(root, width = 3, height = 2, command = lambda:BtnClick(b4), bg = "#0084FE", borderwidth = 0, state = DISABLED, font = ("Helvetica", 30, "normal"))
-    b5 = Button(root, width = 3, height = 2, command = lambda:BtnClick(b5), bg = "#0084FE", borderwidth = 0, state = DISABLED, font = ("Helvetica", 30, "normal"))
-    b6 = Button(root, width = 3, height = 2, command = lambda:BtnClick(b6), bg = "#0084FE", borderwidth = 0, state = DISABLED, font = ("Helvetica", 30, "normal"))
-    b7 = Button(root, width = 3, height = 2, command = lambda:BtnClick(b7), bg = "#0084FE", borderwidth = 0, state = DISABLED, font = ("Helvetica", 30, "normal"))
-    b8 = Button(root, width = 3, height = 2, command = lambda:BtnClick(b8), bg = "#0084FE", borderwidth = 0, state = DISABLED, font = ("Helvetica", 30, "normal"))
-    b9 = Button(root, width = 3, height = 2, command = lambda:BtnClick(b9), bg = "#0084FE", borderwidth = 0, state = DISABLED, font = ("Helvetica", 30, "normal"))
-    replay = Button(root, text = "Play", fg = "#0084FE", highlightbackground = "#FFFFFF", bg = "#FFFFFF", width = 30, height = 2, font = ("Helvetica", 10, "normal"), command = Replay, borderwidth = 0)
+    b1 = Button(root, width = 4, height = 2, command = lambda:BtnClick(b1), bg = "#0084FE", borderwidth = 0, state = DISABLED, font = ("Helvetica", 30, "normal"))
+    b2 = Button(root, width = 4, height = 2, command = lambda:BtnClick(b2), bg = "#0084FE", borderwidth = 0, state = DISABLED, font = ("Helvetica", 30, "normal"))
+    b3 = Button(root, width = 4, height = 2, command = lambda:BtnClick(b3), bg = "#0084FE", borderwidth = 0, state = DISABLED, font = ("Helvetica", 30, "normal"))
+    b4 = Button(root, width = 4, height = 2, command = lambda:BtnClick(b4), bg = "#0084FE", borderwidth = 0, state = DISABLED, font = ("Helvetica", 30, "normal"))
+    b5 = Button(root, width = 4, height = 2, command = lambda:BtnClick(b5), bg = "#0084FE", borderwidth = 0, state = DISABLED, font = ("Helvetica", 30, "normal"))
+    b6 = Button(root, width = 4, height = 2, command = lambda:BtnClick(b6), bg = "#0084FE", borderwidth = 0, state = DISABLED, font = ("Helvetica", 30, "normal"))
+    b7 = Button(root, width = 4, height = 2, command = lambda:BtnClick(b7), bg = "#0084FE", borderwidth = 0, state = DISABLED, font = ("Helvetica", 30, "normal"))
+    b8 = Button(root, width = 4, height = 2, command = lambda:BtnClick(b8), bg = "#0084FE", borderwidth = 0, state = DISABLED, font = ("Helvetica", 30, "normal"))
+    b9 = Button(root, width = 4, height = 2, command = lambda:BtnClick(b9), bg = "#0084FE", borderwidth = 0, state = DISABLED, font = ("Helvetica", 30, "normal"))
+    replay = Button(root, text = "Play", fg = "#0084FE", highlightbackground = "#FFFFFF", bg = "#FFFFFF", width = 37, height = 2, font = ("Helvetica", 10, "normal"), command = Replay, borderwidth = 0)
 
 b1.place(x = 0,     y = 0)
 b2.place(x = 100,   y = 0)
@@ -216,9 +216,10 @@ replay.place(x = 0, y = 358)
 #label
 if sys.platform == "darwin":
     turn = Label(root, text = "Please click play to start the game.", font = ("Helvetica", 15, "normal"), width = 33, height = 3, bg = "#FFFFFF", fg = "#C1C1C1")
+    turn.place(x = 0, y = 300)
 else:
-    turn = Label(root, text = "Please click play to start the game.", font = ("Helvetica", 10, "normal"), width = 33, height = 3, bg = "#FFFFFF", fg = "#C1C1C1")
-turn.place(x = 0, y = 300)
+    turn = Label(root, text = "Please click play to start the game.", font = ("Helvetica", 10, "normal"), width = 37, height = 3, bg = "#FFFFFF", fg = "#C1C1C1")
+    turn.place(x = 0, y = 305)
 #make the window can't be resizable 
 root.resizable(False, False)
 #window background color
